@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pkmn RPS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <form action="" onsubmit="return false">
+    <fieldset>
+    <h2>
+        How many rounds to beat Garry?
+    </h2>
+    <div id="roundSelect">
+        <input type="radio" name="select" id="5"value="5" onclick="getCounterMax()">
+        <label for="5">5🔥💧🍃</label>
+        <input type="radio" name="select" id="10" value="10" onclick="getCounterMax()">
+        <label for="10">10</label>
+        
+        <input type="radio" name="select" id="15" value="15" onclick="getCounterMax()">
+        <label for="15">15</label>
+        <input type="radio" name="select" id="20" value="20" onclick="getCounterMax()">
+        <label for="20">20</label>
+ 
+    </div>
+        <h1 id="counter">hallo</h1>
+    </fieldset>
+    <fieldset id="countfield">
+        
+        <h3 id="score"></h3>
+        <div id="balls">
+        </div>
+       
+    </fieldset>
+    <div id="poke">
+        <img src="assets/img/Schiggy.png"  alt="" onclick="play('water')">
+        <img src="assets/img/glumanda.png" alt=""  onclick="play('fire')">
+        <img src="assets/img/bisasam.png" alt=""  onclick="play('leaf')">
+        </div>
+       
+    </form>
+    <div id="fightscene">
+        <div id="urPkmn">
+            <div class="healtbarOut">
+                KP
+                <div id="urHealthbar">
+
+                </div>
+            </div>
+            <img src="assets/img/glumanda.png" alt="">
+        </div>
+        <div id="enemiePkmn">
+            <div class="healtbarOut">
+                KP
+                <div id="enemieHealthbar">
+
+                </div>
+            </div>
+            <img src="assets/img/glumanda.png" alt="">
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
